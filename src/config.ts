@@ -14,8 +14,8 @@ export const SITE = {
 }
 
 export const ME = {
-    name: "VicBox Dot Dev",
-    profession: "Software Engineer | Full Stack Developer",
+    name: "Jeiner Diaz Morales",
+    profession: "Industrial Engineer | Data Analisis | Business Intelligence | Quality & Logistics",
     profileImage: "pp2.png",
     profileFacts: [
         {
