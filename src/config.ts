@@ -15,7 +15,7 @@ export const SITE = {
 
 export const ME = {
     name: "Jeiner Diaz Morales",
-    profession: "Industrial Engineer | Data Analisis | Business Intelligence | Quality & Logistics",
+    profession: "Industrial Engineer | Data Analisis | Business Intelligence | Quality & Logistics ",
     profileImage: "pp2.png",
     profileFacts: [
         {
