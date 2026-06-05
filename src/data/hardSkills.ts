@@ -8,7 +8,7 @@ const hardSkills: HardSkill[] = [
   {
     name: "AstroJs",
     description: "My favorite static site generator for building modern websites",
-    icon: "astro_dark"
+    icon: "SQL"
   },
   {
     name: "NextJs",
