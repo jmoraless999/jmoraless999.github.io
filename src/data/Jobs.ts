@@ -46,7 +46,7 @@ const workExperience:WorkExperience[] = [
     {
         title: "Call Center Agent",
         startDate: "2026-05-04",
-        endDate: "2020-06-03",
+        endDate: "2026-06-03",
         company: "Covisian",
         location: "Barranquilla",
         description: "Managed customer retention and port-in processes for the Colombian telecommunications market, ensuring seamless mobile number portability and hitting performance targets.",
@@ -60,7 +60,7 @@ const workExperience:WorkExperience[] = [
     {
         title: "Professional Practicum",
         startDate: "2023-01-02",
-        endDate: "2020-06-03",
+        endDate: "2023-06-03",
         company: "Ufinet Colombia S.A",
         location: "Barranquilla",
         description: "Optimized documentation, databases, and administrative processes to improve data access and information flow at Ufinet.",

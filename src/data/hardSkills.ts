@@ -6,9 +6,9 @@ interface HardSkill {
 
 const hardSkills: HardSkill[] = [
   {
-    name: "AstroJs",
+    name: "SQL",
     description: "My favorite static site generator for building modern websites",
-    icon: "astro_dark"
+    icon: "SQL"
   },
   {
     name: "NextJs",
@@ -21,6 +21,16 @@ const hardSkills: HardSkill[] = [
     icon: "nodejs"
   },
   {
+    name: "MongoDB",
+    description: "My favorite database for modern apps",
+    icon: "mongodb"
+  },
+    {
+    name: "MongoDB",
+    description: "My favorite database for modern apps",
+    icon: "mongodb"
+  },
+    {
     name: "MongoDB",
     description: "My favorite database for modern apps",
     icon: "mongodb"

@@ -13,7 +13,7 @@ const  education: Education[] = [
         title: "Certificado de Análisis de Datos Talento Tech",
         startDate: "2025-05-26",
         endDate: "2025-08-01",
-        school: "universidad libre ",
+        school: "Universidad Libre ",
         location: "Barranquilla",
         description: "Tech bootcamp by Unilibre, focused on intensive data analysis training and practical problem-solving.",
         currentUni: false,
