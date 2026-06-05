@@ -27,7 +27,7 @@ export const ME = {
             description: "Completed Projects"
         },
         {
-            value: ,
+            value: "",
             description: ""
         }
     ],
