@@ -6,9 +6,9 @@ interface HardSkill {
 
 const hardSkills: HardSkill[] = [
   {
-    name: "SQL",
+    name: "AstroJs",
     description: "My favorite static site generator for building modern websites",
-    icon: "SQL"
+    icon: "astro_dark"
   },
   {
     name: "NextJs",
