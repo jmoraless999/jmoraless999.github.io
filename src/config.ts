@@ -19,11 +19,11 @@ export const ME = {
     profileImage: "Foto perfil.png",
     profileFacts: [
         {
-            value: 10,
+            value: 1,
             description: "Years of Experience"
         },
         {
-            value: 5,
+            value: 3,
             description: "Completed Projects"
         },
         {
@@ -32,11 +32,11 @@ export const ME = {
         }
     ],
     contactInfo: {
-        email: "vicbox.dev@vicbox.dev",
-        linkedin: "https://www.linkedin.com/in/victor-alvaradohn",
-        resumeDoc: "resume.pdf",
+        email: "jeinerdiazmor@gmail.com",
+        linkedin: "https://www.linkedin.com/in/jeiner-stiven-diaz-morales-57b4a0215",
+        resumeDoc: "Diaz_Morales_Jeiner_CV.pdf",
     },
-    aboutMe: "I am a software engineer with a passion for web development. I have experience in building web " + "applications using modern technologies. I am a self-taught developer who enjoys learning new things and " + "sharing knowledge with others.",
+    aboutMe: "Industrial Engineer and Data Analyst passionate about Business Intelligence. Experienced in transforming complex corporate data into strategic solutions using Python, SQL, Power BI, and Tableau. I thrive on tackling challenges and designing efficient solutions for any type of process.",
 }
 
 export const SOCIALS = [
