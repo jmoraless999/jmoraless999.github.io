@@ -6,34 +6,34 @@ interface HardSkill {
 
 const hardSkills: HardSkill[] = [
   {
-    name: "AQL",
-    description: "My favorite static site generator for building modern websites",
+    name: "SQL",
+    description: "Where I enjoy diving deep into relational databases, writing complex queries, and extracting the exact insights I need",
     icon: "SQL"
   },
   {
-    name: "NextJs",
-    description: "My favorite React framework for building modern web apps",
-    icon: "nextjs_icon_dark"
+    name: "Power Bi",
+    description: "My go-to tool where I love transforming raw data into stunning, interactive dashboards that tell a compelling story",
+    icon: "Power Bi"
   },
   {
-    name: "NodeJs",
-    description: "I've been using NodeJs for backend development since 2018",
-    icon: "nodejs"
+    name: "Excel",
+    description: "Where I enjoy organizing complex spreadsheets, creating advanced formulas, and building quick, reliable data models",
+    icon: "Excel"
   },
   {
-    name: "MongoDB",
-    description: "My favorite database for modern apps",
-    icon: "mongodb"
+    name: "Python",
+    description: "My favorite language where I love building automation scripts, cleaning messy data, and training machine learning models",
+    icon: "Python"
   },
     {
-    name: "MongoDB",
-    description: "My favorite database for modern apps",
-    icon: "mongodb"
+    name: "Rstudio",
+    description: "My favorite space for deep statistical analysis and data mining. ",
+    icon: "Rstudio"
   },
     {
-    name: "MongoDB",
-    description: "My favorite database for modern apps",
-    icon: "mongodb"
+    name: "Tableau",
+    description: "Where I like to explore visual analytics and design beautiful, high-impact dashboards for business insights",
+    icon: "Tableau"
   }
 ];
 
