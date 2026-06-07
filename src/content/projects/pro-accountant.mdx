@@ -12,97 +12,63 @@ author: VicBox
 url: https://github.com/jmoraless999/Proyectos_personales
 cover: './images/pro-accountant/Captura-proyecto-Call-Center.webp'
 ogImage: './images/pro-accountant/Captura-proyecto-Call-Center.webp'
----
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Role](#role)
-3. [Problem](#problem)
-4. [Goal](#goal)
-5. [Solution](#solution)
-    - [Understanding User Needs](#understanding-user-needs)
-    - [Core Features](#core-features)
-    - [Design and Development Process](#design-and-development-process)
-6. [User Testing](#user-testing)
-7. [Challenges and Learnings](#challenges-and-learnings)
-8. [Final Thoughts](#final-thoughts)
+
+---
+¡Hola! Mi nombre es **Jeiner Diaz Morales**. Este es mi primer proyecto personal de Business Intelligence y analítica de datos, publicado tanto en Power BI como en GitHub. Mi objetivo con este trabajo es aplicar mis conocimientos en transformación de datos, modelado y diseño de dashboards para resolver problemas reales de negocio y optimizar la toma de decisiones.
+
+🔗 **[Accede aquí al Dashboard Interactivo en Power BI](https://app.powerbi.com/groups/me/reports/48232e09-36e4-4353-b302-ef955ed7acbc?ctid=bab0b679-bd5f-4fe8-b516-c6b8b317c782&pbi_source=linkShare)**
 
 ---
 
-## Overview
-**ProAccountant** is a modern website designed to help a professional accountant expand her client base and showcase her expertise through a blog. Built using **Next.js**, **Tailwind CSS**, **TypeScript**, and **ShadCN**, the site provides a clean, intuitive interface for potential clients to learn about her services, contact her, and benefit from free, informative blog content.
+## 🎯 Contexto y Objetivos del Proyecto
+
+En el competitivo sector de BPO, las empresas de call center enfrentan el desafío constante de maximizar su rentabilidad sin descuidar la satisfacción del cliente. La gestión del tiempo de llamadas y el monitoreo de agentes son críticos; la falta de visibilidad sobre los indicadores clave puede generar pérdidas económicas y fuga de clientes.
+
+### Objetivos Específicos:
+*   **Monitorear el Rendimiento:** Evaluar los KPIs operativos del call center, como el tiempo promedio de atención y la tasa de resolución.
+*   **Identificar Áreas de Mejora:** Analizar los datos para detectar patrones de bajo rendimiento y oportunidades de capacitación.
+*   **Asegurar el Cumplimiento de Metas:** Contrastar el rendimiento real frente al objetivo de la empresa (mínimo 80% de llamadas contestadas).
+*   **Optimizar la Experiencia del Cliente:** Analizar los tiempos de respuesta y espera para proponer estrategias que mejoren el servicio.
 
 ---
 
-## 👨‍💻 Role
-**Lead Developer** and **Designer**
+## 🛠️ Metodología y Herramientas
+
+Para lograr un escenario realista, los datos fueron extraídos de un dataset público de **Kaggle** sobre Call Centers. El desarrollo técnico se realizó mediante:
+
+*   **Power Query:** Limpieza, transformación y estructuración de la tabla original para asegurar la precisión de los datos.
+*   **DAX (Data Analysis Expressions):** Creación de medidas personalizadas para calcular promedios de tiempo, tasas de abandono y la segmentación de los empleados según su rendimiento.
+*   **Power BI:** Diseño de una interfaz intuitiva utilizando gráficos de dispersión (para evaluar operarios), gráficos de medidor (para KPIs diarios) y tarjetas informativas de alto impacto visual.
 
 ---
 
-## ❓ Problem
-The accountant faced these challenges:
-1. Limited reach to potential clients beyond her local area.
-2. Difficulty in showcasing her expertise in a way that adds value to prospective clients.
-3. Lack of a streamlined and professional way for potential clients to contact her.
+## 📈 Hallazgos Clave e Insights del Negocio
+
+### 1. Nivel de Atención y Segmentación (Meta: 80%)
+*   A nivel global, la empresa registra un **92.69%** de llamadas atendidas, superando la meta mínima.
+*   Al segmentar a los agentes se identificó un problema crítico: El grupo que cumple la meta promedia un **94.22%** de atención, mientras que el grupo que no alcanza el objetivo (menor al 80%) cae a un alarmante **64.79%** de llamadas atendidas, multiplicando por 6 su tasa de abandono (**35.21%**).
+
+### 2. Eficiencia en la Gestión del Tiempo
+*   **Tiempo de Respuesta:** Promedia **24.6 segundos** (0.41 min), manteniéndose dentro del estándar óptimo de la empresa.
+*   **Tiempo de Espera:** Se ubica en **3.87 minutos**. Un punto de atención que requiere ser cruzado a futuro con encuestas de satisfacción.
+*   **Duración de Llamada:** El promedio es de **2.63 minutos**, un valor inicialmente adecuado para la operación.
+
+### 3. Patrones y Anomalías Detectadas (IDs de Agentes)
+*   Se identificó una tendencia clara de bajo rendimiento en los agentes con rangos de ID entre **700 y 900**.
+*   Por el contrario, los agentes con IDs **inferiores a 500** y **superiores a 1100** muestran un desempeño sobresaliente. 
+*   *Hipótesis de negocio:* Es necesario evaluar si este comportamiento está ligado a los horarios de los turnos, la experiencia de los agentes (antigüedad) o el lote de capacitación recibido.
 
 ---
 
-## 🎯 Goal
-1. Create an attractive, professional website to market her accounting services.
-2. Build a **contact form** that allows seamless communication with potential clients.
-3. Develop a mini blog to share content and establish her as a trusted authority in accounting.
+## 🚀 Próximos Pasos y Mejoras Futuras
+
+1.  **Integración de Feedback de Clientes:** Incorporar métricas de CSAT (satisfacción del cliente) para medir el impacto real de los tiempos de espera.
+2.  **Monitoreo en Tiempo Real:** Evolucionar el dashboard hacia una conexión en tiempo real para permitir a los supervisores tomar acciones correctivas inmediatas.
+3.  **Analítica Avanzada y Automatización:** Implementar modelos predictivos para anticipar picos de llamadas e integrar propuestas como bots de respuesta rápida para reducir los tiempos de espera.
 
 ---
 
-## ✨ Solution
+## 📬 Contacto y Feedback
 
-### Understanding User Needs
-We conducted a brief survey and interviews with 10 small business owners and freelancers (her target audience) to identify their expectations for an accounting services website. Key findings:
-- **Trustworthiness:** A clean and professional design is crucial to establishing trust.
-- **Easy Navigation:** Users expect to find information about services quickly.
-- **Educational Value:** A blog with tips and guidance enhances the site's value.
-
-### Core Features
-1. **Services Page:** Clear and concise information about her offerings.
-2. **Contact Form:** A dynamic form with validation and spam protection.
-3. **Blog Section:** Articles categorized by topics (e.g., tax tips, financial planning).
-4. **Responsive Design:** Optimized for desktop and mobile users.
-
-### Design and Development Process
-1. **Frontend:** Built using **Next.js** for its fast rendering capabilities.
-2. **Styling:** Styled with **Tailwind CSS**, ensuring a clean, modern aesthetic.
-3. **Component System:** Developed reusable UI components using **ShadCN**.
-4. **Interactivity:** Integrated TypeScript for type safety and robust interactivity.
-5. **SEO Optimization:** Implemented metadata and structured content for better search rankings.
-
----
-
-## 🚌 User Journey
-1. **Homepage:** Features a welcoming introduction, her services, and a call-to-action for the blog and contact form.
-2. **Services Page:** Detailed descriptions of accounting services like bookkeeping, tax preparation, and financial consulting.
-3. **Contact Page:** An interactive form that auto-validates inputs and sends direct inquiries to her email.
-4. **Blog Page:** Displays articles sorted by relevance with easy navigation.
-
----
-
-## 🧪 User Testing
-We tested the website prototype with 8 participants and gathered insights:
-- **Ease of Navigation:** 7/8 participants found the site easy to navigate.
-- **Contact Form:** Users appreciated the validation messages and simplicity of the form.
-- **Blog Engagement:** The blog received positive feedback, with users suggesting adding a search bar for articles.
-
----
-
-## ⚙️ Challenges and Learnings
-1. **Dynamic Blog Management:** Managing blog posts dynamically required integrating a CMS for easier updates.
-2. **Spam Protection:** Setting up a reliable anti-spam solution for the contact form was critical to avoid irrelevant submissions.
-3. **Accessibility:** Ensured the site meets accessibility standards, improving usability for all users.
-
----
-
-## ✨ Final Thoughts
-1. **Design Matters:** A clean and professional design significantly increases trust and engagement.
-2. **Content is Key:** The blog not only adds value but also boosts SEO and client retention.
-3. **Continuous Improvement:** Adding new features like a client testimonial section or financial calculators could further enhance the site's utility.
-
----
+Estoy comprometido con mi desarrollo profesional y actualmente me encuentro en la búsqueda de mi primera oportunidad laboral como **Analista de Datos**. Agradezco enormemente cualquier comentario, crítica constructiva o sugerencia que me ayude a seguir puliendo mis habilidades.
