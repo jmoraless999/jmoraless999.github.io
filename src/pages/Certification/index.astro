@@ -24,31 +24,33 @@ const allPost = (await getCollection('posts'))
     .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
-<Layout title="John Doe | Portfolio | Blog" description="A list of my blog posts" scrollSmooth={false}>
-    <>
-        <!--Blog Section-->
-        <section class="border-bottom">
-            <div class="mb-4">
-                <h2 class="text-3xl font-bold mb-8">All My Blog Posts</h2>
-            </div>
-        </section>
+<Layout
+  title="John Doe | Portfolio | Certifications"
+  description="My certifications"
+  scrollSmooth={false}
+>
+  <section class="border-bottom">
+    <div class="mb-4">
+      <h2 class="text-3xl font-bold mb-8">All My Certifications</h2>
+    </div>
+  </section>
 
-        <section class="flex flex-col gap-8">
-            {allPost.length > 0 ? (
-                allPost.map((post: Post) => (
-                        <PostCard
-                                id={post.id}
-                                title={post.data.title}
-                                description={post.data.description}
-                                publishDate={post.data.publishDate}
-                                tags={post.data.tags}
-                                cover={post.data.cover}
-                        />
-                ))
-            ) : (
-                    <p>No posts found.</p>
-            )
-            }
-        </section>
-    </>
+  <section class="flex flex-col gap-8">
+    {
+      allCertification.length > 0 ? (
+        allCertification.map((certification) => (
+          <PostCard
+            id={certification.id}
+            title={certification.data.title}
+            description={certification.data.summary}
+            publishDate={certification.data.startDate}
+            tags={certification.data.tags}
+            cover={certification.data.cover}
+          />
+        ))
+      ) : (
+        <p>No certifications found.</p>
+      )
+    }
+  </section>
 </Layout>
