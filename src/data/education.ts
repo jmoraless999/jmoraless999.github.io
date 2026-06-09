@@ -17,6 +17,7 @@ const  education: Education[] = [
         location: "Barranquilla",
         description: "Tech bootcamp by Unilibre, focused on intensive data analysis training and practical problem-solving.",
         currentUni: false,
+        
     },
     {
         title: "Google Data Analytics Professional Certificate",
