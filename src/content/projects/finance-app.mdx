@@ -62,8 +62,19 @@ A través del procesamiento del dataset, se determinaron las siguientes métrica
 * **Pandas:** Limpieza de datos, manejo de codificación de caracteres, tablas dinámicas ("pivot_table") y agregaciones avanzadas ("groupby").
 * **Matplotlib & Seaborn:** Creación de gráficos analíticos (Líneas de crecimiento acumulado, subplots compactos y mapas de calor correlacionales).
 ---
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-  <Image src={imgGanancias} alt="Evolución Temporal de las Ganancias" style={{ width: '90%', height: 'auto', borderRadius: '1rem' }} />
+
+## 📉 Análisis Detallado de Visualizaciones e Insights
+
+### 1. Crecimiento Acumulado de Ganancias en el Tiempo
+---
+<div class="flex justify-center my-6">
+  <Image src={imgGanancias} alt="Evolución Temporal de las Ganancias" width={850} class="rounded-2xl" />
 </div>
 
----
+* **Descripción:** Gráfico de líneas temporales con agregación acumulativa (`.cumsum()`) que elimina el ruido de las fluctuaciones diarias para mostrar la velocidad de crecimiento real y la tendencia comercial a largo plazo de cada sucursal.
+* **Insights Clave:**
+  * **La Tienda E** mantiene el liderazgo absoluto durante casi todo el histórico, despegándose con fuerza en la recta final y cerrando como la sucursal más rentable.
+  * **La Tienda C** muestra una velocidad de acumulación visiblemente más lenta, quedando rezagada en el fondo del gráfico de principio a fin.
+  * Existe una competencia sumamente reñida entre las **Tiendas A, B y D**, cuyas líneas se cruzan constantemente a mitad del periodo, lo que demuestra un rendimiento comercial muy similar antes de que la Tienda D tomara una ligera ventaja al final.
+
+---|
