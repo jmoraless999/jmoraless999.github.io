@@ -32,5 +32,74 @@ Este proyecto consiste en un análisis exploratorio de datos (EDA) y desarrollo 
 * **Matplotlib & Seaborn:** Creación de gráficos analíticos (Líneas de crecimiento acumulado, subplots compactos y mapas de calor correlacionales).
 ---
 
-!["casa"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_3.webp)
+## 📉 Análisis Detallado de Visualizaciones e Insights
 
+### 1. Crecimiento Acumulado de Ganancias en el Tiempo
+---
+
+
+!["Captura_1"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_3.webp)
+
+---
+* **Descripción:** Gráfico de líneas temporales con agregación acumulativa (`.cumsum()`) que elimina el ruido de las fluctuaciones diarias para mostrar la velocidad de crecimiento real y la tendencia comercial a largo plazo de cada sucursal.
+* **Insights Clave:**
+  * **La Tienda E** mantiene el liderazgo absoluto durante casi todo el histórico, despegándose con fuerza en la recta final y cerrando como la sucursal más rentable.
+  * **La Tienda C** muestra una velocidad de acumulación visiblemente más lenta, quedando rezagada en el fondo del gráfico de principio a fin.
+  * Existe una competencia sumamente reñida entre las **Tiendas A, B y D**, cuyas líneas se cruzan constantemente a mitad del periodo, lo que demuestra un rendimiento comercial muy similar antes de que la Tienda D tomara una ligera ventaja al final.
+
+---
+
+### 2. Top 5 Productos Más Vendidos por Tienda
+
+!["Captura_2"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_4.webp) 
+
+
+* **Descripción:** Matriz compacta de subplots utilizando gráficos de barras horizontales independientes para cada tienda. Facilita la lectura directa de cadenas de texto largas y resalta el inventario estrella de forma individualizada.
+* **Insights Clave:**
+  * El producto líder absoluto en ingresos para la **Tienda A** es el *Microondas LG*.
+  * En la **Tienda B**, el producto estrella que encabeza las ventas es el *Puzzle 1000 piezas*.
+  * Para la **Tienda C**, el artículo de mayor recaudación es la *Casaca Puma*.
+  * La **Tienda D** tiene su mayor foco de ingresos en la *Cafetera Delonghi*.
+  * En la **Tienda E**, los *Auriculares Sony* dominan drásticamente el gráfico frente a sus demás productos.
+  * **Nota de negocio:** Este gráfico demuestra que **las tiendas no comparten el mismo comportamiento de consumo**, lo que valida la necesidad de segmentar las estrategias de stock por región o sucursal.
+
+---
+
+### 3. Mapa de Calor: Ventas por Tienda y Categoría
+
+!["Captura_3"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_6.webp) 
+
+* **Descripción:** Matriz de correlación cruzada bidimensional (Pivot Table) optimizada con un mapa de calor (`sns.heatmap`). Utiliza una escala cromática secuencial (donde el azul oscuro denota la mayor densidad de ingresos) para identificar la especialización comercial de cada tienda.
+* **Insights Clave:**
+  * El punto caliente (foco de dinero) más alto de todo el negocio se encuentra en la **Tienda E en la categoría de Deportes**, facturando una cifra contundente de **$111,170**. Esta misma tienda también es fuertísima en *Electrónica* ($103,714).
+  * La **Tienda D** tiene su fortaleza crítica en la categoría de **Hogar**, alcanzando el pico más alto de ese sector con **$106,619**.
+  * Las **Tiendas A y B** muestran una distribución de ingresos mucho más equilibrada y homogénea, teniendo sus mejores números en **Hogar** ($90,022) y **Juguetes** ($92,486) respectivamente.
+  * **Debilidades comerciales:** La categoría de **Deportes en la Tienda C** ($30,827) y **Electrónica en la Tienda C** ($29,561) representan los niveles de facturación más bajos de toda la tabla, señalando departamentos urgentes a intervenir.
+
+---
+
+### 4. Ventas Totales según el Día de la Semana
+
+!["Captura_4"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_7.webp) 
+
+
+* **Descripción:** Gráfico de barras verticales ordenadas cronológicamente de Lunes a Domingo utilizando una paleta degradada (`Blues_r`) para evaluar la estacionalidad diaria de las transacciones.
+* **Insights Clave:**
+  * El negocio presenta un comportamiento comercial sumamente saludable durante los fines de semana, logrando sus picos máximos de facturación los días **Sábado y Domingo** (superando los $300,000 por día).
+  * Sorprendentemente, los días **Martes y Jueves** muestran un volumen de ventas sumamente agresivo y alto, equiparándose casi por completo al rendimiento del fin de semana.
+  * El punto más bajo de recaudación ocurre los **Lunes**, seguido por un descenso de transacciones los **Viernes**.
+  * **Insight de BI:** Esto sugiere que las campañas de reabastecimiento de inventario en los estantes físicos deberían completarse idealmente los lunes por la tarde para estar preparados frente al repunte del martes y el fin de semana.
+
+---
+
+### 5. Eficiencia de la Fuerza de Ventas (Vendedores)
+
+!["Captura_2"](https://raw.githubusercontent.com/jmoraless999/jmoraless999.github.io/master/src/content/projects/images/budget-wise/Imagen_5.webp) 
+* **Descripción:** Evaluación del rendimiento individual del equipo comercial mediante métricas cruzadas de volumen de ingresos y transacciones.
+* **Insights Clave:**
+  * **José** es el vendedor más rentable del negocio generando **
+---
+
+## 💡 Conclusiones del Análisis
+1. **Dominio de Sucursales:** La **Tienda E** lidera los ingresos globales con un total vendido superior, seguida muy de cerca por la Tienda D, mientras que la Tienda C presenta el menor volumen de facturación transaccional.
+2. **Fuerza de Ventas:** Los vendedores *José* y *Pedro* representan los pilares comerciales con la mayor recaudación e ingresos totales generados para el negocio.
