@@ -1,115 +1,235 @@
 ---
-title: BudgetWise App
-summary: Manage your personal finances with ease using this mobile app concept. Track your expenses, set budgets, and visualize your spending habits. Built with React Native, Expo, Clerk, Firebase, and Tailwind.
+title:  Análisis de Rendimiento Comercial
+summary: Este proyecto consiste en un análisis exploratorio de datos (EDA) y desarrollo de Inteligencia de Negocios utilizando **Python** y **Pandas**. 
 tags:
-    - React Native
-    - Expo
-    - Clerk
-    - Firebase
-    - Tailwind
-startDate: 2024-04-07
-endDate: 2024-04-09
-author: John Doe
-url: https://google.com
+    - business-intelligence
+    - data-analysis
+    - eda
+    - matplotlib
+    - pandas
+startDate: 2026-06-09
+endDate: 2026-06-09
+author: Jeiner Diaz
+url: https://www.kaggle.com/code/jeinerdiaz/notebookfe01a4efec/edit
 cover: './images/budget-wise/finance_app_concept.webp'
 ogImage: './images/budget-wise/og-finance_app.webp'
 ---
 
-## Table of Contents
-1. [Overview](#overview)
-2. [Role](#role)
-3. [Problem](#problem)
-4. [Goal](#goal)
-5. [Solution](#solution)
-- [How do users manage finances currently?](#how-do-users-manage-finances-currently)
-- [What features do users value most?](#what-features-do-users-value-most)
-- [Exploring new financial management tools](#exploring-new-financial-management-tools)
-- [User Journey](#user-journey)
-6. [User Testing](#user-testing)
-7. [Challenges and Learnings](#challenges-and-learnings)
-8. [Final Thoughts](#final-thoughts)
+# 📈 Análisis de Rendimiento Comercial y BI - Ventas Retail
+
+## 🗺️ Table of Contents
+1. [Descripción del Proyecto](#descripción-del-proyecto)
+2. [KPIs y Métricas Clave Descubiertas](#kpis-y-métricas-clave-descubiertas)
+3. [Estructura del Repositorio](#estructura-del-repositorio)
+4. [Tecnologías y Librerías Utilizadas](#tecnologías-y-librerías-utilizadas)
+5. [Análisis Detallado de Visualizaciones e Insights](#análisis-detallado-de-visualizaciones-e-insights)
+   - [Crecimiento Acumulado de Ganancias en el Tiempo](#1-crecimiento-acumulado-de-ganancias-en-el-tiempo)
+   - [Top 5 Productos Más Vendidos por Tienda](#2-top-5-productos-más-vendidos-por-tienda)
+   - [Mapa de Calor: Ventas por Tienda y Categoría](#3-mapa-de-calor-ventas-por-tienda-y-categoría)
+   - [Ventas Totales según el Día de la Semana](#4-ventas-totales-según-el-día-de-la-semana)
+   - [Eficiencia de la Fuerza de Ventas (Vendedores)](#5-eficiencia-de-la-fuerza-de-ventas-vendedores)
+6. [Conclusiones del Análisis](#conclusiones-del-análisis)
 
 ---
 
-## Overview
-**BudgetWise** is a mobile application designed to help users manage their personal finances efficiently. Built using **React Native**, **Expo**, and **TypeScript**, it aims to provide a seamless experience for users to track expenses, set budgets, and visualize financial goals.
-
-The app bridges the gap for individuals struggling to organize their financial habits by offering a modern and intuitive solution.
+## 📝 Descripción del Proyecto
+Este proyecto consiste en un análisis exploratorio de datos (EDA) y desarrollo de Inteligencia de Negocios utilizando **Python** y **Pandas**. El objetivo principal es evaluar el comportamiento transaccional de múltiples tiendas retail, identificar los productos estrella de cada sucursal, medir la eficiencia de los vendedores y descubrir patrones estacionales de compra para optimizar la toma de decisiones estratégicas.
 
 ---
 
-## 👨‍💻 Role
-**Lead Developer** and **UI/UX Designer**
+## 📊 KPIs y Métricas Clave Descubiertas
+A través del procesamiento del dataset, se determinaron las siguientes métricas globales de rendimiento operativo:
+* **Ticket Promedio de Compra:** `$4,070.29` por transacción.
+* **Unidades Promedio por Transacción (UPT):** `5.4 unidades` por cliente.
+* **Precio Promedio de Productos:** `$751.21`
 
 ---
 
-## ❓ Problem
-Many individuals face difficulty in:
-1. Tracking daily expenses consistently.
-2. Setting realistic budgets and sticking to them.
-3. Understanding their spending patterns due to lack of clear visualization tools.
+## 📂 Estructura del Repositorio
+* `data/`: Contiene el set de datos en formato CSV con el histórico de ventas.
+* `notebooks/`: Incluye el Jupyter Notebook desarrollado originalmente en Kaggle con todo el flujo de extracción, limpieza con codificación `latin1` y visualizaciones.
 
 ---
 
-## 🎯 Goal
-1. Simplify the process of tracking expenses and setting budgets.
-2. Empower users to make informed financial decisions with intuitive visualizations.
-3. Increase user engagement by gamifying goal setting and achievement.
-
-![App Mockup](./images/budget-wise/finance1.webp)
+## 🛠️ Tecnologías y Librerías Utilizadas
+* **Python 3.12**
+* **Pandas:** Limpieza de datos, manejo de codificación de caracteres, tablas dinámicas (`pivot_table`) y agregaciones avanzadas (`groupby`).
+* **Matplotlib & Seaborn:** Creación de gráficos analíticos (Líneas de crecimiento acumulado, subplots compactos y mapas de calor correlacionales).
 
 ---
 
-## ✨ Solution
+## 📉 Análisis Detallado de Visualizaciones e Insights
 
-### How do users manage finances currently?
-We conducted a survey of 20 individuals and found:
-- 65% use spreadsheets but find them time-consuming.
-- 25% rely on physical notes or memory.
-- 10% use financial apps but feel they are overly complicated.
+### 1. Crecimiento Acumulado de Ganancias en el Tiempo
 
-### What features do users value most?
-Survey participants ranked the following features as most important:
-1. **Expense categorization.**
-2. **Budget-setting tools.**
-3. **Goal progress visualization.**
+<p align="center">
+  <img src="Public/Imagen_3.png" alt="Evolución Temporal de las Ganancias" width="90%">
+</p>
 
-### Exploring new financial management tools
-We designed a dashboard that combines:
-1. **Categorized Expense Tracking:** Auto-categorizes based on transaction type.
-2. **Budget Alerts:** Real-time notifications when nearing budget limits.
-3. **Savings Gamification:** Rewards users for hitting their financial goals.
-
-![App Mockup](./images/budget-wise/fincs.webp)
+* **Descripción:** Gráfico de líneas temporales con agregación acumulativa (`.cumsum()`) que elimina el ruido de las fluctuaciones diarias para mostrar la velocidad de crecimiento real y la tendencia comercial a largo plazo de cada sucursal.
+* **Insights Clave:**
+  * **La Tienda E** mantiene el liderazgo absoluto durante casi todo el histórico, despegándose con fuerza en la recta final y cerrando como la sucursal más rentable.
+  * **La Tienda C** muestra una velocidad de acumulación visiblemente más lenta, quedando rezagada en el fondo del gráfico de principio a fin.
+  * Existe una competencia sumamente reñida entre las **Tiendas A, B y D**, cuyas líneas se cruzan constantemente a mitad del periodo, lo que demuestra un rendimiento comercial muy similar antes de que la Tienda D tomara una ligera ventaja al final.
 
 ---
 
-### User Journey
-1. **Onboarding:** Users input financial goals and monthly income during sign-up.
-2. **Expense Tracking:** Add expenses manually or sync with bank accounts.
-3. **Budget Monitoring:** Dynamic dashboards display budget status.
-4. **Goal Tracking:** Progress is visualized with charts and milestones.
+### 2. Top 5 Productos Más Vendidos por Tienda
+
+<p align="center">
+  <img src="Public/Imagen_4.png" alt="Top 5 Productos Más Vendidos por Tienda" width="90%">
+</p>
+
+* **Descripción:** Matriz compacta de subplots utilizando gráficos de barras horizontales independientes para cada tienda. Facilita la lectura directa de cadenas de texto largas y resalta el inventario estrella de forma individualizada.
+* **Insights Clave:**
+  * El producto líder absoluto en ingresos para la **Tienda A** es el *Microondas LG*.
+  * En la **Tienda B**, el producto estrella que encabeza las ventas es el *Puzzle 1000 piezas*.
+  * Para la **Tienda C**, el artículo de mayor recaudación es la *Casaca Puma*.
+  * La **Tienda D** tiene su mayor foco de ingresos en la *Cafetera Delonghi*.
+  * En la **Tienda E**, los *Auriculares Sony* dominan drásticamente el gráfico frente a sus demás productos.
+  * **Nota de negocio:** Este gráfico demuestra que **las tiendas no comparten el mismo comportamiento de consumo**, lo que valida la necesidad de segmentar las estrategias de stock por región o sucursal.
 
 ---
 
-## 🧪 User Testing
-We tested the prototype with 12 participants and discovered:
-- **Ease of Use:** 10/12 users appreciated the minimalist design.
-- **Notifications:** 8/12 felt the alerts were helpful, but some found them intrusive.
-- **Visualization:** All users loved the goal progress charts but suggested adding weekly summaries.
+### 3. Mapa de Calor: Ventas por Tienda y Categoría
+
+<p align="center">
+  <img src="Public/Imagen_6.png" alt="Mapa de Calor: Ventas por Tienda y Categoría" width="90%">
+</p>
+
+* **Descripción:** Matriz de correlación cruzada bidimensional (Pivot Table) optimizada con un mapa de calor (`sns.heatmap`). Utiliza una escala cromática secuencial (donde el azul oscuro denota la mayor densidad de ingresos) para identificar la especialización comercial de cada tienda.
+* **Insights Clave:**
+  * El punto caliente (foco de dinero) más alto de todo el negocio se encuentra en la **Tienda E en la categoría de Deportes**, facturando una cifra contundente de **$111,170**. Esta misma tienda también es fuertísima en *Electrónica* ($103,714).
+  * La **Tienda D** tiene su fortaleza crítica en la categoría de **Hogar**, alcanzando el pico más alto de ese sector con **$106,619**.
+  * Las **Tiendas A y B** muestran una distribución de ingresos mucho más equilibrada y homogénea, teniendo sus mejores números en **Hogar** ($90,022) y **Juguetes** ($92,486) respectivamente.
+  * **Debilidades comerciales:** La categoría de **Deportes en la Tienda C** ($30,827) y **Electrónica en la Tienda C** ($29,561) representan los niveles de facturación más bajos de toda la tabla, señalando departamentos urgentes a intervenir.
 
 ---
 
-## ⚙️ Challenges and Learnings
-1. **Real-Time Data Synchronization:** Ensuring seamless bank account integration while maintaining security was a technical hurdle.
-2. **Balancing Notifications:** Finding the right frequency for alerts to avoid overwhelming users.
-3. **Accessibility:** Testing with colorblind users led to revising the color scheme for better visibility.
+### 4. Ventas Totales según el Día de la Semana
+
+<p align="center">
+  <img src="Public/Imagen_7.png" alt="Ventas Totales según el Día de la Semana" width="90%">
+</p>
+
+* **Descripción:** Gráfico de barras verticales ordenadas cronológicamente de Lunes a Domingo utilizando una paleta degradada (`Blues_r`) para evaluar la estacionalidad diaria de las transacciones.
+* **Insights Clave:**
+  * El negocio presenta un comportamiento comercial sumamente saludable durante los fines de semana, logrando sus picos máximos de facturación los días **Sábado y Domingo** (superando los $300,000 por día).
+  * Sorprendentemente, los días **Martes y Jueves** muestran un volumen de ventas sumamente agresivo y alto, equiparándose casi por completo al rendimiento del fin de semana.
+  * El punto más bajo de recaudación ocurre los **Lunes**, seguido por un descenso de transacciones los **Viernes**.
+  * **Insight de BI:** Esto sugiere que las campañas de reabastecimiento de inventario en los estantes físicos deberían completarse idealmente los lunes por la tarde para estar preparados frente al repunte del martes y el fin de semana.
 
 ---
 
-## ✨ Final Thoughts
-1. **Data Security is Paramount:** Financial data requires robust encryption and secure APIs for user trust.
-2. **Iterative Design Works:** Continuous user feedback helped refine the app to meet real needs.
-3. **User Education is Key:** Some users lacked basic financial literacy, so adding educational tips and videos enhanced their experience.
+### 5. Eficiencia de la Fuerza de Ventas (Vendedores)
+
+<p align="center">
+  <img src="Public/Imagen_5.png" alt="Eficiencia de la Fuerza de Ventas" width="90%">
+</p>
+
+* **Descripción:** Evaluación del rendimiento individual del equipo comercial mediante métricas cruzadas de volumen de ingresos y transacciones.
+* **Insights Clave:**
+  * **José** es el vendedor más rentable del negocio generando **$
+
+---
+# 📈 Análisis de Rendimiento Comercial y BI - Ventas Retail
+
+## 📝 Descripción del Proyecto
+Este proyecto consiste en un análisis exploratorio de datos (EDA) y desarrollo de Inteligencia de Negocios utilizando **Python** y **Pandas**. El objetivo principal es evaluar el comportamiento transaccional de múltiples tiendas retail, identificar los productos estrella de cada sucursal, medir la eficiencia de los vendedores y descubrir patrones estacionales de compra para optimizar la toma de decisiones estratégicas.
+
+---
+
+## 📊 KPIs y Métricas Clave Descubiertas
+A través del procesamiento del dataset, se determinaron las siguientes métricas globales de rendimiento operativo:
+* **Ticket Promedio de Compra:** `$4,070.29` por transacción.
+* **Unidades Promedio por Transacción (UPT):** `5.4 unidades` por cliente.
+* **Precio Promedio de Productos:** `$751.21`
+
+---
+
+## 📂 Estructura del Repositorio
+* `data/`: Contiene el set de datos en formato CSV con el histórico de ventas.
+* `notebooks/`: Incluye el Jupyter Notebook desarrollado originalmente en Kaggle con todo el flujo de extracción, limpieza con codificación `latin1` y visualizaciones.
+
+---
+
+## 🛠️ Tecnologías y Librerías Utilizadas
+* **Python 3.12**
+* **Pandas:** Limpieza de datos, manejo de codificación de caracteres, tablas dinámicas (`pivot_table`) y agregaciones avanzadas (`groupby`).
+* **Matplotlib & Seaborn:** Creación de gráficos analíticos (Líneas de crecimiento acumulado, subplots compactos y mapas de calor correlacionales).
+---
+## 📉 Análisis Detallado de Visualizaciones e Insights
+
+### 1. Crecimiento Acumulado de Ganancias en el Tiempo
+
+<p align="center">
+  <img src="Public/Imagen_3.png" alt="Evolución Temporal de las Ganancias" width="90%">
+</p>
+
+* **Descripción:** Gráfico de líneas temporales con agregación acumulativa (`.cumsum()`) que elimina el ruido de las fluctuaciones diarias para mostrar la velocidad de crecimiento real y la tendencia comercial a largo plazo de cada sucursal.
+* **Insights Clave:**
+  * **La Tienda E** mantiene el liderazgo absoluto durante casi todo el histórico, despegándose con fuerza en la recta final y cerrando como la sucursal más rentable.
+  * **La Tienda C** muestra una velocidad de acumulación visiblemente más lenta, quedando rezagada en el fondo del gráfico de principio a fin.
+  * Existe una competencia sumamente reñida entre las **Tiendas A, B y D**, cuyas líneas se cruzan constantemente a mitad del periodo, lo que demuestra un rendimiento comercial muy similar antes de que la Tienda D tomara una ligera ventaja al final.
+---
+### 2. Top 5 Productos Más Vendidos por Tienda
+
+<p align="center">
+  <img src="Public/Imagen_4.png" alt="Top 5 Productos Más Vendidos por Tienda" width="90%">
+</p>
+
+* **Descripción:** Matriz compacta de subplots utilizando gráficos de barras horizontales independientes para cada tienda. Facilita la lectura directa de cadenas de texto largas y resalta el inventario estrella de forma individualizada.
+* **Insights Clave:**
+  * El producto líder absoluto en ingresos para la **Tienda A** es el *Microondas LG*.
+  * En la **Tienda B**, el producto estrella que encabeza las ventas es el *Puzzle 1000 piezas*.
+  * Para la **Tienda C**, el artículo de mayor recaudación es la *Casaca Puma*.
+  * La **Tienda D** tiene su mayor foco de ingresos en la *Cafetera Delonghi*.
+  * En la **Tienda E**, los *Auriculares Sony* dominan drásticamente el gráfico frente a sus demás productos.
+  * **Nota de negocio:** Este gráfico demuestra que **las tiendas no comparten el mismo comportamiento de consumo**, lo que valida la necesidad de segmentar las estrategias de stock por región o sucursal.
+
+---
+### 3. Mapa de Calor: Ventas por Tienda y Categoría
+
+<p align="center">
+  <img src="Public/Imagen_6.png" alt="Mapa de Calor: Ventas por Tienda y Categoría" width="90%">
+</p>
+
+* **Descripción:** Matriz de correlación cruzada bidimensional (Pivot Table) optimizada con un mapa de calor (`sns.heatmap`). Utiliza una escala cromática secuencial (donde el azul oscuro denota la mayor densidad de ingresos) para identificar la especialización comercial de cada tienda.
+* **Insights Clave:**
+  * El punto caliente (foco de dinero) más alto de todo el negocio se encuentra en la **Tienda E en la categoría de Deportes**, facturando una cifra contundente de **$111,170**. Esta misma tienda también es fuertísima en *Electrónica* ($103,714).
+  * La **Tienda D** tiene su fortaleza crítica en la categoría de **Hogar**, alcanzando el pico más alto de ese sector con **$106,619**.
+  * Las **Tiendas A y B** muestran una distribución de ingresos mucho más equilibrada y homogénea, teniendo sus mejores números en **Hogar** ($90,022) y **Juguetes** ($92,486) respectivamente.
+  * **Debilidades comerciales:** La categoría de **Deportes en la Tienda C** ($30,827) y **Electrónica en la Tienda C** ($29,561) representan los niveles de facturación más bajos de toda la tabla, señalando departamentos urgentes a intervenir.
+---
+### 4. Ventas Totales según el Día de la Semana
+
+<p align="center">
+  <img src="Public/Imagen_7.png" alt="Ventas Totales según el Día de la Semana" width="90%">
+</p>
+
+* **Descripción:** Gráfico de barras verticales ordenadas cronológicamente de Lunes a Domingo utilizando una paleta degradada (`Blues_r`) para evaluar la estacionalidad diaria de las transacciones.
+* **Insights Clave:**
+  * El negocio presenta un comportamiento comercial sumamente saludable durante los fines de semana, logrando sus picos máximos de facturación los días **Sábado y Domingo** (superando los $300,000 por día).
+  * Sorprendentemente, los días **Martes y Jueves** muestran un volumen de ventas sumamente agresivo y alto, equiparándose casi por completo al rendimiento del fin de semana.
+  * El punto más bajo de recaudación ocurre los **Lunes**, seguido por un descenso de transacciones los **Viernes**.
+  * **Insight de BI:** Esto sugiere que las campañas de reabastecimiento de inventario en los estantes físicos deberían completarse idealmente los lunes por la tarde para estar preparados frente al repunte del martes y el fin de semana.
+---
+### 5. Eficiencia de la Fuerza de Ventas (Vendedores)
+
+<p align="center">
+  <img src="Public/Imagen_5.png" alt="Eficiencia de la Fuerza de Ventas" width="90%">
+</p>
+
+* **Descripción:** Evaluación del rendimiento individual del equipo comercial mediante métricas cruzadas de volumen de ingresos y transacciones.
+* **Insights Clave:**
+  * **José** es el vendedor más rentable del negocio generando **$293,871.59** totales, a pesar de registrar *menos transacciones* (63) que su competidor más cercano, **Pedro** (67 transacciones y $291,807.96).
+  * Esto demuestra que José posee un **Ticket Promedio significativamente más alto ($4,664.63)**, validando su alta efectividad y habilidad comercial para cerrar ventas de productos de alto valor ("high-ticket").
+
+---
+
+## 💡 Conclusiones del Análisis
+1. **Dominio de Sucursales:** La **Tienda E** lidera los ingresos globales con un total vendido superior, seguida muy de cerca por la Tienda D, mientras que la Tienda C presenta el menor volumen de facturación transaccional.
+2. **Fuerza de Ventas:** Los vendedores *José* y *Pedro* representan los pilares comerciales con la mayor recaudación e ingresos totales generados para el negocio.
+3. **Análisis de Concentración:** El mapa de calor permitió identificar con precisión qué departamentos o categorías de producto sostienen el tráfico de clientes en cada sucursal específica.
 
 ---
